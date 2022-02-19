@@ -1,0 +1,26 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MyLayoutPage</title>
+</head>
+<body>
+    <div>
+        <h1 style="text-align:center;background-color:yellow;">This is My Layout Page</h1>
+        <div>
+            @RenderBody()
+            @Scripts.Render("~/bundles/jquery")
+            @Scripts.Render("~/bundles/bootstrap")
+            @RenderSection("scripts", required: false)
+        </div>
+    </div>
+</body>
+</html>
+
+
